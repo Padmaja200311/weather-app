@@ -1,16 +1,58 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive weather application built using React and JavaScript.
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This application allows users to search for a city and view its current weather information.
 
-## React Compiler
+The application first gets the city coordinates using the Open-Meteo Geocoding API and then uses those coordinates to fetch current weather information from the Open-Meteo Weather API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Search weather by city name
+- Display current temperature
+- Display humidity
+- Display wind speed
+- Display weather condition
+- Weather icons
+- Loading state
+- Error handling
+- Responsive design
+- Enter key support for search
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React
+- JavaScript
+- Vite
+- CSS
+- Open-Meteo API
+
+## React Concepts Used
+
+- Functional Components
+- Props
+- useState
+- useEffect
+- Custom Hooks
+- Event Handling
+- Controlled Components
+- Conditional Rendering
+- async/await
+- try/catch/finally
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── SearchBar.jsx
+│   └── WeatherCard.jsx
+├── hooks/
+│   └── useWeather.js
+├── services/
+│   └── weatherApi.js
+├── App.jsx
+├── main.jsx
+└── index.css
